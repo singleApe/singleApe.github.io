@@ -1,0 +1,79 @@
+.lg_h{
+	width: 100%;
+	height: 100px;
+	/*background: deeppink;*/
+}
+.lg_b{
+	height: 600px;
+	background: url(../images/login_b.jpg) no-repeat center center;
+}
+.lg_wrapper{
+	padding: 10px 0;
+	width: 970px;
+	margin: 0 auto;
+}
+.lg_b .form{
+	float: right;
+    position: relative;
+    margin-top: 70px;
+    width: 386px;
+    height: 450px;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(187,187,187,.7);
+    color: #323232;
+    line-height: 1;
+}
+.form .form_cont{
+	position: relative;
+    margin: 30px 24px 0;
+    height: 420px;
+}
+
+/*共有样式*/
+.mb20{
+	margin-bottom: 20px;
+}
+.form .form_cont .login_txtbox{
+	position: relative;
+    padding: 11px 26px 11px 37px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.form .form_cont .input_label{
+	position: absolute;
+    left: 37px;
+    top: 14px;
+    font-size: 14px;
+    color: #999;
+    background: 0;
+    cursor: text;
+}
+.form .form_cont .login_txtbox .txt_input{
+	width: 294px;
+    height: 18px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+}
+
+
+/*简单的样式*/
+label {
+			display: block;
+			margin: 30px;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			height: 32px;
+			margin-top: 10px;
+		}
+.login_button{
+	background: #FFD237;
+	cursor: pointer;
+}
