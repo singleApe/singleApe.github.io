@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+	<div class="lg_h">登录页面，哦也!</div>
+	<div class="lg_b">
+		<div class="lg_wrapper">
+			<a href="" class="pic"></a>
+			<div class="form">
+				<div class="form_cont">
+					<p class="form_title">欢迎登录</p>
+					<form action="">
+						<label for="">
+							用户名：<input type="text" name="username" autofocus required placeholder="用户名/手机/邮箱/门店会员卡号" pattern="\D+">
+						</label>
+						<label for="">
+							密码：<input type="password" name="pass">
+						</label>
+						<label for="">
+							<input type="button" value="登录" class="login_button">
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script>
+	//点击按钮获取表单元素
+	$(".login_button").on("click",function(){
+		
+		//获取用户名
+		var user = $("input[type='text']").val();
+		var pwd = $("input[type='password']").val();
+		$.ajax({
+			type:"post",
+			url:"login.php",
+			// data:formData,
+			data: {
+				user: user,
+				pwd: pwd
+			},
+			success:function(err, data){
+				console.log(err);
+			}
+		});
+	});
+	
+</script>
+</html>
